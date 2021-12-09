@@ -1,5 +1,5 @@
 # Compilador en Python
-## Analizador Semánt
+## Proyecto Final
  
 ### Equipo: 
 ### * Magaña Reynoso, Antonio - 218744856
