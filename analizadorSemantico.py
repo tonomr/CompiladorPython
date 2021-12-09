@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Dec  9 14:03:02 2021
-
-@author: prime
-"""
-
 txt = " "
 cont = 0
 def incremetarContador():
@@ -850,6 +843,3 @@ class Number(Nodo):
 		id = incremetarContador()
 		txt += id + "[label= "+str(self.name)+"]"+"\n\t"
 		return id
-# class empty(Nodo):
-# 	def __init__(self,name):
-# 		pass
