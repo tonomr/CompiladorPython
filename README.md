@@ -28,6 +28,7 @@ Con la documentación de la biblioteca, nos indica que hay que definir la expres
 El programa reconoce los espacios, tabulaciones y saltos de línea, pero los ignora para concentrarse en las listas antes definidas.
 
 ## Resultados:
+![Analizador Léxico](/screenshots/IMG_20211209_144156.jpg)
 
 
 ## Conclusión:
