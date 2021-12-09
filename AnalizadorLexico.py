@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Dec  9 14:00:43 2021
-
-@author: prime
-"""
-
 import ply.lex as lex
 
 RESERVADAS = ['BEGIN','END','IF','THEN','WHILE','DO','CALL','CONST','VAR','PROCEDURE','OUT','IN','ELSE']
@@ -63,4 +56,3 @@ analizador = lex.lex()
 
 # El programa Lee el archivo de texto (que es un programa en lenguaje PL/0)
 # Y detecta e imprime todos los tokens que pertenecen al lenguaje
-#if __name__ == '__main__
