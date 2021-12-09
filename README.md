@@ -1,5 +1,5 @@
 # Compilador en Python
-## Analizador Sintactico
+## Analizador Semánt
  
 ### Equipo: 
 ### * Magaña Reynoso, Antonio - 218744856
@@ -22,14 +22,21 @@
 Generar un compilador en Python.
 
 ## Metodología
-## Analizador Léxico:
+
+### Analizador Léxico:
 Usando la biblioteca PLY, tenemos que definir en nuestro analizador léxico nuestra lista de palabras reservadas y tokens, además de las variables y funciones de estás últimas.
 Con la documentación de la biblioteca, nos indica que hay que definir la expresión regular de las funciones definidas, por último, imprimir la lista de tokens que nuestro programa detecto.
 El programa reconoce los espacios, tabulaciones y saltos de línea, pero los ignora para concentrarse en las listas antes definidas.
 
-## Analizador Sintactico:
+
+### Analizador Sintactico:
 Con nuestro analizador sintactico verificamos que el programa este bien escrito. Usando las reglas de la gramática del lenguaje.
 Por ejemplo, si nos falta un punto y coma o un paréntesis, está parte se encarga de informarlo.
+
+### Analizador Semántico:
+Este tercer analizador de encargará de generar el árbol sintactico y la tabla de símbolos, si no hubo error al analizar el programa en las dos etapas anteriores.
+
+
 
 
 ## Resultados:
@@ -42,3 +49,8 @@ Y ese es el trabajo del analizador léxico, detectar los tokens y verificar que 
 
 La segunda parte vigila que el programa está bien escrito, sin errores como que nos falte algún cierre de paréntesis por ejemplo.
 De esta forma, podremos avanzar a la siguiente parte de nuestro compilador.
+
+
+Ahora bien, la tercera parte nos genera el árbol sintactico y es capaz de generar la tabla de estados y las reducciones gramaticales.
+Así podremos apreciar como nuestro programa está siendo construido y compilado y nos permite avanzar a las siguientes fases.
+
