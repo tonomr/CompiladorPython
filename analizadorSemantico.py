@@ -10,7 +10,7 @@ class Null(Nodo):
 	def __init__(self):
 		self.type = 'void'
 	def imprimir(self,ident):
-		print ident + "nodo nulo"
+		print (ident + "nodo nulo")
 	def traducir(self):
 		global txt
 		id = incremetarContador()
@@ -22,7 +22,7 @@ class program(Nodo):
 		self.son1 = son1
 	def imprimir(self,ident):
 		self.son1.imprimir(" "+ident)
-		print ident + "Nodo: "+self.name
+		print (ident + "Nodo: "+self.name)
 	def traducir(self):
 		global txt
 		id = incremetarContador()
@@ -70,7 +70,7 @@ class block(Nodo):
 		else:
 			#print "entro instance"
 			self.son4.imprimir(" "+ident)
-		print ident + "Nodo: "+self.name
+		print (ident + "Nodo: "+self.name)
 			
 	def traducir(self):
 		global txt
@@ -108,7 +108,7 @@ class constDecl(Nodo):
 		# 	self.son1[0].imprimir(" "+ident)
 		# else:
 		# 	self.son1.imprimir(" "+ident)
-		print ident + "Nodo: "+self.name
+		print (ident + "Nodo: "+self.name)
 	def traducir(self):
 		global txt
 		id = incremetarContador()
@@ -130,7 +130,7 @@ class constAssignmentList1(Nodo):
 		self.son1.imprimir(" "+ident)
 		self.son2.imprimir(" "+ident)
 		self.son3.imprimir(" "+ident)
-		print ident + "Nodo: "+self.name
+		print (ident + "Nodo: "+self.name)
 			
 	def traducir(self):
 		global txt
@@ -155,7 +155,7 @@ class constAssignmentList2(Nodo):
 		self.son2.imprimir(" "+ident)
 		self.son3.imprimir(" "+ident)
 		self.son4.imprimir(" "+ident)
-		print ident + "Nodo: "+self.name
+		print (ident + "Nodo: "+self.name)
 			
 	def traducir(self):
 		global txt
@@ -176,7 +176,7 @@ class varDecl1(Nodo):
 		self.son1 = son1
 	def imprimir(self,ident):
 		self.son1.imprimir(" "+ident)
-		print ident + "Nodo: "+self.name
+		print (ident + "Nodo: "+self.name)
 			
 	def traducir(self):
 		global txt
@@ -191,7 +191,7 @@ class identList1(Nodo):
 		self.son1 = son1
 	def imprimir(self,ident):
 		self.son1.imprimir(" "+ident)
-		print ident + "Nodo: "+self.name
+		print (ident + "Nodo: "+self.name)
 			
 	def traducir(self):
 		global txt
@@ -208,7 +208,7 @@ class identList2(Nodo):
 	def imprimir(self,ident):
 		self.son1.imprimir(" "+ident)
 		self.son2.imprimir(" "+ident)
-		print ident + "Nodo: "+self.name
+		print (ident + "Nodo: "+self.name)
 			
 	def traducir(self):
 		global txt
@@ -232,7 +232,7 @@ class procDecl1(Nodo):
 			self.son1.imprimir(" "+ident)
 		self.son2.imprimir(" "+ident)
 		self.son3.imprimir(" "+ident)
-		print ident + "Nodo: "+self.name
+		print (ident + "Nodo: "+self.name)
 	def traducir(self):
 		global txt
 		id = incremetarContador()
@@ -254,7 +254,7 @@ class statement1(Nodo):
 		self.son1.imprimir(" "+ident)
 		self.son2.imprimir(" "+ident)
 		self.son3.imprimir(" "+ident)
-		print ident + "Nodo: "+self.name
+		print (ident + "Nodo: "+self.name)
 	def traducir(self):
 		global txt
 		id = incremetarContador()
@@ -272,7 +272,7 @@ class statement2(Nodo):
 		self.son1 = son1
 	def imprimir(self,ident):
 		self.son1.imprimir(" "+ident)
-		print ident + "Nodo: "+self.name
+		print (ident + "Nodo: "+self.name)
 			
 	def traducir(self):
 		global txt
@@ -287,7 +287,7 @@ class statement3(Nodo):
 		self.son1 = son1
 	def imprimir(self,ident):
 		self.son1.imprimir(" "+ident)
-		print ident + "Nodo: "+self.name
+		print (ident + "Nodo: "+self.name)
 			
 	def traducir(self):
 		global txt
@@ -307,7 +307,7 @@ class statement4(Nodo):
 			self.son2[0].imprimir(" "+ident)
 		else:
 			self.son2.imprimir(" "+ident)
-		print ident + "Nodo: "+self.name
+		print (ident + "Nodo: "+self.name)
 			
 	def traducir(self):
 		global txt
@@ -329,7 +329,7 @@ class statement5(Nodo):
 			self.son2[0].imprimir(" "+ident)
 		else:
 			self.son2.imprimir(" "+ident)
-		print ident + "Nodo: "+self.name
+		print (ident + "Nodo: "+self.name)
 			
 	def traducir(self):
 		global txt
@@ -346,7 +346,7 @@ class statementList1(Nodo):
 		self.son1 = son1
 	def imprimir(self,ident):
 		self.son1.imprimir(" "+ident)
-		print ident + "Nodo: "+self.name
+		print (ident + "Nodo: "+self.name)
 			
 	def traducir(self):
 		global txt
@@ -363,7 +363,7 @@ class statementList2(Nodo):
 	def imprimir(self,ident):
 		self.son1.imprimir(" "+ident)
 		self.son2.imprimir(" "+ident)
-		print ident + "Nodo: "+self.name
+		print (ident + "Nodo: "+self.name)
 			
 	def traducir(self):
 		global txt
@@ -380,7 +380,7 @@ class condition1(Nodo):
 		self.son1 = son1
 	def imprimir(self,ident):
 		self.son1.imprimir(" "+ident)
-		print ident + "Nodo: "+self.name
+		print (ident + "Nodo: "+self.name)
 			
 	def traducir(self):
 		global txt
@@ -399,7 +399,7 @@ class condition2(Nodo):
 		self.son1.imprimir(" "+ident)
 		self.son2.imprimir(" "+ident)
 		self.son3.imprimir(" "+ident)
-		print ident + "Nodo: "+self.name
+		print (ident + "Nodo: "+self.name)
 	def traducir(self):
 		global txt
 		id = incremetarContador()
@@ -417,7 +417,7 @@ class relation1(Nodo):
 		self.son1 = son1
 	def imprimir(self,ident):
 		self.son1.imprimir(" "+ident)
-		print ident + "Nodo: "+self.name
+		print (ident + "Nodo: "+self.name)
 			
 	def traducir(self):
 		global txt
@@ -432,7 +432,7 @@ class relation2(Nodo):
 		self.son1 = son1
 	def imprimir(self,ident):
 		self.son1.imprimir(" "+ident)
-		print ident + "Nodo: "+self.name
+		print (ident + "Nodo: "+self.name)
 			
 	def traducir(self):
 		global txt
@@ -447,7 +447,7 @@ class relation3(Nodo):
 		self.son1 = son1
 	def imprimir(self,ident):
 		self.son1.imprimir(" "+ident)
-		print ident + "Nodo: "+self.name
+		print (ident + "Nodo: "+self.name)
 			
 	def traducir(self):
 		global txt
@@ -462,7 +462,7 @@ class relation4(Nodo):
 		self.son1 = son1
 	def imprimir(self,ident):
 		self.son1.imprimir(" "+ident)
-		print ident + "Nodo: "+self.name
+		print (ident + "Nodo: "+self.name)
 			
 	def traducir(self):
 		global txt
@@ -477,7 +477,7 @@ class relation5(Nodo):
 		self.son1 = son1
 	def imprimir(self,ident):
 		self.son1.imprimir(" "+ident)
-		print ident + "Nodo: "+self.name
+		print (ident + "Nodo: "+self.name)
 			
 	def traducir(self):
 		global txt
@@ -492,7 +492,7 @@ class relation6(Nodo):
 		self.son1 = son1
 	def imprimir(self,ident):
 		self.son1.imprimir(" "+ident)
-		print ident + "Nodo: "+self.name
+		print (ident + "Nodo: "+self.name)
 			
 	def traducir(self):
 		global txt
@@ -507,7 +507,7 @@ class expression1(Nodo):
 		self.son1 = son1
 	def imprimir(self,ident):
 		self.son1.imprimir(" "+ident)
-		print ident + "Nodo: "+self.name
+		print (ident + "Nodo: "+self.name)
 			
 	def traducir(self):
 		global txt
@@ -524,7 +524,7 @@ class expression2(Nodo):
 	def imprimir(self,ident):
 		self.son1.imprimir(" "+ident)
 		self.son2.imprimir(" "+ident)
-		print ident + "Nodo: "+self.name
+		print (ident + "Nodo: "+self.name)
 			
 	def traducir(self):
 		global txt
@@ -545,7 +545,7 @@ class expression3(Nodo):
 		self.son1.imprimir(" "+ident)
 		self.son2.imprimir(" "+ident)
 		self.son3.imprimir(" "+ident)
-		print ident + "Nodo: "+self.name
+		print (ident + "Nodo: "+self.name)
 	def traducir(self):
 		global txt
 		id = incremetarContador()
@@ -563,7 +563,7 @@ class addingOperator1(Nodo):
 		self.son1 = son1
 	def imprimir(self,ident):
 		self.son1.imprimir(" "+ident)
-		print ident + "Nodo: "+self.name
+		print (ident + "Nodo: "+self.name)
 			
 	def traducir(self):
 		global txt
@@ -578,7 +578,7 @@ class addingOperator2(Nodo):
 		self.son1 = son1
 	def imprimir(self,ident):
 		self.son1.imprimir(" "+ident)
-		print ident + "Nodo: "+self.name
+		print (ident + "Nodo: "+self.name)
 			
 	def traducir(self):
 		global txt
@@ -593,7 +593,7 @@ class term1(Nodo):
 		self.son1 = son1
 	def imprimir(self,ident):
 		self.son1.imprimir(" "+ident)
-		print ident + "Nodo: "+self.name
+		print (ident + "Nodo: "+self.name)
 			
 	def traducir(self):
 		global txt
@@ -612,7 +612,7 @@ class term2(Nodo):
 		self.son1.imprimir(" "+ident)
 		self.son2.imprimir(" "+ident)
 		self.son3.imprimir(" "+ident)
-		print ident + "Nodo: "+self.name
+		print (ident + "Nodo: "+self.name)
 	def traducir(self):
 		global txt
 		id = incremetarContador()
@@ -630,7 +630,7 @@ class multiplyingOperator1(Nodo):
 		self.son1 = son1
 	def imprimir(self,ident):
 		self.son1.imprimir(" "+ident)
-		print ident + "Nodo: "+self.name
+		print (ident + "Nodo: "+self.name)
 			
 	def traducir(self):
 		global txt
@@ -645,7 +645,7 @@ class multiplyingOperator2(Nodo):
 		self.son1 = son1
 	def imprimir(self,ident):
 		self.son1.imprimir(" "+ident)
-		print ident + "Nodo: "+self.name
+		print (ident + "Nodo: "+self.name)
 			
 	def traducir(self):
 		global txt
@@ -660,7 +660,7 @@ class factor1(Nodo):
 		self.son1 = son1
 	def imprimir(self,ident):
 		self.son1.imprimir(" "+ident)
-		print ident + "Nodo: "+self.name
+		print (ident + "Nodo: "+self.name)
 			
 	def traducir(self):
 		global txt
@@ -675,7 +675,7 @@ class factor2(Nodo):
 		self.son1 = son1
 	def imprimir(self,ident):
 		self.son1.imprimir(" "+ident)
-		print ident + "Nodo: "+self.name
+		print (ident + "Nodo: "+self.name)
 			
 	def traducir(self):
 		global txt
@@ -690,7 +690,7 @@ class factor3(Nodo):
 		self.son1 = son1
 	def imprimir(self,ident):
 		self.son1.imprimir(" "+ident)
-		print ident + "Nodo: "+self.name
+		print (ident + "Nodo: "+self.name)
 			
 	def traducir(self):
 		global txt
@@ -703,7 +703,7 @@ class Id(Nodo):
 	def __init__(self,name):
 		self.name = name
 	def imprimir(self,ident):
-		print ident+"ID: "+self.name
+		print (ident+"ID: "+self.name)
 			
 	def traducir(self):
 		global txt
@@ -714,7 +714,7 @@ class Assign(Nodo):
 	def __init__(self,name):
 		self.name = name
 	def imprimir(self,ident):
-		print ident+"Assign: "+self.name
+		print (ident+"Assign: "+self.name)
 			
 	def traducir(self):
 		global txt
@@ -726,7 +726,7 @@ class NE(Nodo):
 	def __init__(self,name):
 		self.name = name
 	def imprimir(self,ident):
-		print ident+"NE: "+self.name
+		print (ident+"NE: "+self.name)
 			
 	def traducir(self):
 		global txt
@@ -737,7 +737,7 @@ class LT(Nodo):
 	def __init__(self,name):
 		self.name = name
 	def imprimir(self,ident):
-		print ident+"LT: "+self.name
+		print (ident+"LT: "+self.name)
 			
 	def traducir(self):
 		global txt
@@ -748,7 +748,7 @@ class GT(Nodo):
 	def __init__(self,name):
 		self.name = name
 	def imprimir(self,ident):
-		print ident+"GT: "+self.name
+		print (ident+"GT: "+self.name)
 			
 	def traducir(self):
 		global txt
@@ -759,7 +759,7 @@ class LTE(Nodo):
 	def __init__(self,name):
 		self.name = name
 	def imprimir(self,ident):
-		print ident+"LTE: "+self.name
+		print (ident+"LTE: "+self.name)
 			
 	def traducir(self):
 		global txt
@@ -770,7 +770,7 @@ class GTE(Nodo):
 	def __init__(self,name):
 		self.name = name
 	def imprimir(self,ident):
-		print ident+"GTE: "+self.name
+		print (ident+"GTE: "+self.name)
 			
 	def traducir(self):
 		global txt
@@ -781,7 +781,7 @@ class Plus(Nodo):
 	def __init__(self,name):
 		self.name = name
 	def imprimir(self,ident):
-		print ident+"Plus: "+self.name
+		print (ident+"Plus: "+self.name)
 			
 	def traducir(self):
 		global txt
@@ -792,7 +792,7 @@ class Minus(Nodo):
 	def __init__(self,name):
 		self.name = name
 	def imprimir(self,ident):
-		print ident+"Minus: "+self.name
+		print (ident+"Minus: "+self.name)
 			
 	def traducir(self):
 		global txt
@@ -803,7 +803,7 @@ class Times(Nodo):
 	def __init__(self,name):
 		self.name = name
 	def imprimir(self,ident):
-		print ident+"Times: "+self.name
+		print (ident+"Times: "+self.name)
 			
 	def traducir(self):
 		global txt
@@ -814,7 +814,7 @@ class Divide(Nodo):
 	def __init__(self,name):
 		self.name = name
 	def imprimir(self,ident):
-		print ident+"Divide: "+self.name
+		print (ident+"Divide: "+self.name)
 			
 	def traducir(self):
 		global txt
@@ -825,7 +825,7 @@ class Update(Nodo):
 	def __init__(self,name):
 		self.name = name
 	def imprimir(self,ident):
-		print ident+"Update: "+self.name
+		print (ident+"Update: "+self.name)
 			
 	def traducir(self):
 		global txt
@@ -836,13 +836,10 @@ class Number(Nodo):
 	def __init__(self,name):
 		self.name = name
 	def imprimir(self,ident):
-		print ident+"Number: "+str(self.name)
+		print (ident+"Number: "+str(self.name))
 			
 	def traducir(self):
 		global txt
 		id = incremetarContador()
 		txt += id + "[label= "+str(self.name)+"]"+"\n\t"
 		return id
-# class empty(Nodo):
-# 	def __init__(self,name):
-# 		pass
