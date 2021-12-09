@@ -1,0 +1,24 @@
+digraph G {
+	 3[label= nodo_nulo]
+	4[label= nodo_nulo]
+	5[label= nodo_nulo]
+	6[label= nodo_nulo]
+	2[label= block]
+	2 -> 3
+	2 -> 4
+	2 -> 5
+	2 -> 6
+	1[label= program]
+	1->2
+	9[label= nodo_nulo]
+	10[label= nodo_nulo]
+	11[label= nodo_nulo]
+	12[label= nodo_nulo]
+	8[label= block]
+	8 -> 9
+	8 -> 10
+	8 -> 11
+	8 -> 12
+	7[label= program]
+	7->8
+	}
