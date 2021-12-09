@@ -1,5 +1,12 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Dec  9 14:02:16 2021
+
+@author: prime
+"""
+
 import ply.yacc as yacc
-from analizadorLexico import tokens
+from AnalizadorLexico import tokens
 from analizadorSemantico import *
 
 
@@ -108,7 +115,7 @@ def p_statementList2(p):
 
 def p_condition1(p):
     '''condition : ODD expression'''
-     p[0] = condition1(p[2],"condition1")
+    p[0] = condition1(p[2],"condition1")
 
 
 def p_condition2(p):
