@@ -33,7 +33,8 @@ Por ejemplo, si nos falta un punto y coma o un paréntesis, está parte se encar
 
 
 ## Resultados:
-
+![Analizador Léxico](/screenshots/IMG_20211209_144156.jpg)
+![Analizador Sintactico](/screenshots/IMG_20211209_144234.jpg)
 
 ## Conclusión:
 Este proyecto nos hizo aprender más acerca de cómo funcionan los compiladores, ya que tuvimos que hacer las primeras etapas de uno.
