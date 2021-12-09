@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Dec  9 14:02:16 2021
-
-@author: prime
-"""
-
 import ply.yacc as yacc
 from AnalizadorLexico import tokens
 from analizadorSemantico import *
