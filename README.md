@@ -1,5 +1,5 @@
 # Compilador en Python
-## Analizador Léxico
+## Analizador Sintactico
  
 ### Equipo: 
 ### * Magaña Reynoso, Antonio - 218744856
