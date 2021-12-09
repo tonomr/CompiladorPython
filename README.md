@@ -37,9 +37,11 @@ Por ejemplo, si nos falta un punto y coma o un paréntesis, está parte se encar
 Este tercer analizador de encargará de generar el árbol sintactico y la tabla de símbolos, si no hubo error al analizar el programa en las dos etapas anteriores.
 
 
-
-
 ## Resultados:
+![Analizador Léxico](/screenshots/IMG_20211209_144156.jpg)
+![Analizador Sintactico](/screenshots/IMG_20211209_144234.jpg)
+![Analizador Semántico](/screenshots/IMG_20211209_144325.jpg)
+![Analizador Semántico 2](/screenshots/IMG_20211209_144336.jpg)
 
 
 ## Conclusión:
