@@ -28,7 +28,9 @@ Con la documentación de la biblioteca, nos indica que hay que definir la expres
 El programa reconoce los espacios, tabulaciones y saltos de línea, pero los ignora para concentrarse en las listas antes definidas.
 
 ## Analizador Sintactico:
-Con nuestro Analizador léxico 
+Con nuestro analizador sintactico verificamos que el programa este bien escrito. Usando las reglas de la gramática del lenguaje.
+Por ejemplo, si nos falta un punto y coma o un paréntesis, está parte se encarga de informarlo.
+
 
 ## Resultados:
 
@@ -37,3 +39,6 @@ Con nuestro Analizador léxico
 Este proyecto nos hizo aprender más acerca de cómo funcionan los compiladores, ya que tuvimos que hacer las primeras etapas de uno.
 La primera parte se encarga de que todos los caracteres, palabras o tokens se encuentren en el lenguaje que nosotros definimos, si hay algún token no reconocido, aquí nos marcará error de que ese token es inválido.
 Y ese es el trabajo del analizador léxico, detectar los tokens y verificar que sean parte del lenguaje.
+
+La segunda parte vigila que el programa está bien escrito, sin errores como que nos falte algún cierre de paréntesis por ejemplo.
+De esta forma, podremos avanzar a la siguiente parte de nuestro compilador.
